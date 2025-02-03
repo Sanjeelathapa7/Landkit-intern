@@ -10,56 +10,226 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css"
     rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 
   <link rel="stylesheet" href="scss/style.css" />
 </head>
 
 <body>
+  <!-- <section>
+    <nav class="navbar navbar-expand-lg bg-white">
+      <div class="container">
+        <a class="navbar-brand" href="./index.html">
+          <img src="/images/logo.svg" class="navbar-brand-img" alt="...">
+        </a>
+         <button class="navbar-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggle-icon"></span>
+         </button>
+
+         <div class="collapse navbar-collapse" id="navbarCollapse">
+          <button class="navbar-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fe fe-x"></i>
+          </button>
+
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle show" id="navbarLandings" data-bs-toggle="dropdown" href="#"
+              aria-expanded="true">Landings</a>
+              <div class="dropdown-menu dropdown-menu-xl-p-0" aria-labelledby="navbarLandings" data-bs-popper="static">
+                <div class="row gx-0">
+                  <div class="col-12 col-lg-6">
+                    <div class="dropdown-img-start" style="background-image:url(/images/dropdown.jpg)">
+                      <h4 class="fw-bold text-white mb-0">Want to see an overview? </h4>
+                      <p class="fs-sm text-white">See all the pages at once. </p>
+                      <a href="./overview.html" class="btn btn-sm btn-white shadow-dark font-size-sm">View all pages</a>
+                    </div>
+                  </div>
+                  <div class="col-12 col-lg-6">
+                    <div class="dropdown-body">
+                      <div class="row gx-0">
+                        <div class="col-6">
+                          <h6 class="dropdown-header">SERVICES</h6>
+                          <a class="dropdown-item" href="./coworking.html">Coworking</a>
+                          <a class="dropdown-item" href="./rental.html">Rental</a>
+                          <a class="dropdown-item" href="./joblisting.html">Job Listing</a>
+                        </div>
+                        <div class="col-6"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+         </div>
+      </div>
+    </nav>
+  </section> -->
+
   <section class="navbar navbar-expand-lg    ">
     <div class="container  ">
       <div class="navbar__logo">
         <img src="/images/logo.svg" alt="logo" />
       </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
+
+     
       <div class="collapse navbar-collapse m-3 " id="navbarNav">
-        <ul class="navbar-nav m-auto">
-          <li class="nav-item me-4 dropdown">
+        <ul class="navbar-nav m-auto"  >
+          <li class="nav-item me-4 dropdown" >
             <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Landings
             </a>
-            <ul class="dropdown-menu">
-              <li class="dropdown-item" href="#">Services</li>
-            </ul>
+            <div class="dropdown-menu" aria-labelledby="navbarLandings" style="width: 690px;  margin:0px; padding:0px; border-color:white; box-shadow:0 4px 8px rgba(0, 0, 0, 0.1); left:50%; transform:translateX(-50%); ">
+              <div class="container">
+                <div class="row"  style="margin-top: 0px !important;">
+                  <div class="col-7 d-flex align-items-center" style="padding-left:0px " >
+                      <img src="/images/dropdown.jpg" class="img-fluid" style="width: 345px; border-radius: 3px 0px 0px 3px;">
+                      <div class="position-absolute top-0 start-0 w-50 h-100 bg-primary opacity-50 rounded-start"></div>
+                    <div class="position-absolute top-50 start-0 translate-middle-y text-white p-3 w-50">
+                      <h4 class=" mb-1 text-center">Want to see an overview?</h4>
+                      <p class="fs-sm mb-2 text-center">See all the pages at once.</p>
+                      <a href="./overview.html" class="btn btn-sm btn-light shadow-dark fontFt-size-sm" style="margin-left:80px; color:#4A6EF5; font-size:18px" >View all pages</a>
+                  </div>
+                  </div>
+                  <div class="col-lg-5 d-flex align-items-center "  style="border-color:white;">
+                    <div class="content" >
+                      <h6 style="color: #4A6EF5; font-weight:400">SERVICES</h6>
+                      <ul class="list-unstyled" style="color: #556884;" >
+                        <li>Coworking</li>
+                        <li>Rental</li>
+                        <li>Job Listing</li>
+                      </ul>
+                      <h6 style="color: #4A6EF5; font-weight:400; margin-top:20px">APPS</h6>
+                      <ul class="list-unstyled" style="color: #556884;">
+                        <li>Desktop</li>
+                        <li>Mobile</li>
+                      </ul>
+                     
+                    
+                      
+                    </div>
+                    <div class="content" style="margin-left: 50px; margin-top:0px">
+                      <h6 style="color: #4A6EF5; font-weight:400">WEB</h6>
+                    <ul class="list-unstyled" style="color: #556884;">
+                      <li>Basic</li>
+                      <li>Startup</li>
+                      <li>Enterprise</li>
+                      <li>Service</li>
+                      <li>Cloud Hosting</li>
+                      <li>Agency</li>
+                      <li>Framework</li>
+                    </ul>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+              </li>
+             
 
-          <li class="nav-item me-4 dropdown">
-            <a class="nav-link  " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+           <li class="nav-item me-4 dropdown">
+            <a class="nav-link dropdown  " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Pages
             </a>
-            <ul class="dropdown-menu">
-              <li class="dropdown-item" href="#">Services</li>
-            </ul>
 
-          <li class="nav-item me-4 dropdown">
-            <a class="nav-link  " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Account
-            </a>
-            <ul class="dropdown-menu">
-              <li class="dropdown-item" href="#">Settings</li>
-              <li class="dropdown-item" href="#">Sign in</li>
-              <li class="dropdown-item" href="#">Sign up</li>
-              <li class="dropdown-item" href="#">Password Reset</li>
-              <li class="dropdown-item" href="#">Error</li>
+            <div class="dropdown-menu dropdown-menu-xl " aria-labelledby="navbarLandings">
+            <div class="row gx-0">
+              <div class="col-6">
+                
+              </div>
+              <div class="col-6">
+                <div class="row gx-0">
+                  
+              </div>            </div>
+            </div>
+            
+
+            <li class="nav-item me-4 dropdown">
+              <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Account
+              </a>
+              <ul class="dropdown-menu dropdown-item-dropend">
+                <li class="dropdown-item dropdown">
+                  <p class="dropdown" href="#" role="button" id="settingsDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                    Settings
+                    <i class="bi bi-chevron-right" style="font-size:12px; margin-left:100px"></i>
+                  </p>
+                  <ul class="dropdown-menu " aria-labelledby="settingsDropdown" style="right: 50%; transform:translateX(130%); ">
+                    <li><a class="dropdown-item" href="#">General</a></li>
+                    <li><a class="dropdown-item" href="#">Security</a></li>
+                    <li><a class="dropdown-item" href="#">Notifications</a></li>
+                    <li><a class="dropdown-item" href="#">Plans & Payment</a></li>
+                    <li><a class="dropdown-item" href="#">Users</a></li>
+                  </ul>
+                </li>
+             
+            
+              
+              <li class="dropdown-item" href="#">Sign in
+                <i class="bi bi-chevron-right" style="font-size:12px; margin-left:110px"></i>
+
+              </li>
+              <li class="dropdown-item" href="#">Sign up
+                <i class="bi bi-chevron-right" style="font-size:12px; margin-left:105px"></i>
+
+              </li>
+              <li class="dropdown-item" href="#">Password Reset
+                <i class="bi bi-chevron-right" style="font-size:12px; margin-left:50px"></i>
+
+              </li>
+              <li class="dropdown-item" href="#">Error
+                <i class="bi bi-chevron-right" style="font-size:12px; margin-left:125px"></i>
+
+              </li>
 
             </ul>
-          <li class="nav-item me-4 dropdown">
-            <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Documentation
-            </a>
+            <li class="nav-item me-4 dropdown">
+              <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Documentation
+              </a>
+              <ul class="dropdown-menu dropdown-item-dropend p-3" style="width: 300px;border-color:white; box-shadow:0 4px 8px rgba(0, 0, 0, 0.1);">
+                  <li class="dropdown-item d-flex align-items-start">
+                    <img src="/images/documentation.png" alt="" width="40px">
+                      <div class="ms-3">
+                          <span class="text-primary">DOCUMENTATION</span><br>
+                          <span class="text" style="color: #556884;">Customizing and building</span>
+                      </div>
+                  </li>
+                  <hr>
+                  <li class="dropdown-item d-flex align-items-start">
+                    <img src="/images/components.png" alt="" width="40px">
+
+                      <div class="ms-3">
+                          <span class=" text-primary">COMPONENTS</span><br>
+                          <span class="text" style="color: #556884;">Full list of components</span>
+                      </div>
+                  </li>
+                  <hr>
+                  <li class="dropdown-item d-flex align-items-start" >
+                    <img src="/images/filee.png" alt="" width="40px">
+                      <div class="ms-3">
+                          <span class=" text-primary">CHANGELOG</span><br>
+                          <span class="text" style="color:#556884;">Keep track of changes</span>
+                      </div>
+                      <span class="badge text ms-auto" style="background-color: #cad8ec; color:#335eea">2.3.0</span>
+                  </li>
+              </ul>
+          </li>
+          
+              </ul>
+              
+            
       </div>
       <div class="btn btn-primary" type="submit">
         Buy now
-      </div>
+      </div> 
 
 
 
@@ -69,17 +239,41 @@
   </section>
 
 
-  <div class="container">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="container ">
     <div class="row">
-      <div class="col">
+      <div class="col" data-aos="fade-up" data-aos-duration="1000">
         <div class="title ">
-          <h1 class="text " style="font-size: 40px; font-weight:400">Welcome to
-            <span class="textt " style="font-size: 40px; ">Landkit</span>
+          <h1 class="text " style="font-size: 45px; font-weight:400">Welcome to
+            <span class="textt " style="font-size: 45px; ">Landkit</span>
             Develop anything.
           </h1>
         </div>
 
-        <div class="para ">
+        <div class="para " style="color:rgba(134, 154, 184,); font-weight:300;">
           <p class="text-secondary" style="font-size: 20px;">Build a beautiful, modern website with flexible
             <br>Bootstrap components built from scratch.
           </p>
@@ -87,17 +281,17 @@
 
         <div class="buttons">
           <button type="button" class="btn btn1 btn-lg mt-4 ">
-            View All Pages <i class="bi bi-arrow-right"></i>
+           <span style="font-size: 15px; margin-top:20px"> View All Pages </span><i class="bi bi-arrow-right"></i>
           </button>
 
-          <button type="button" class="btn btn2 btn-lg mt-4" style="color: rgb(69, 49, 255);">Documentation
+          <button type="button" class="btn btn2 btn-lg mt-4" style="color: rgb(69, 49, 255); font-size: 20px;">Documentation
           </button>
 
         </div>
 
 
       </div>
-      <div class="col mt-2 ms-2">
+      <div class="col mt-2 ms-2" data-aos="fade-up" data-aos-duration="1600">
         <img src="/images/landing.png" alt="image" class="image">
       </div>
 
@@ -113,21 +307,21 @@
 
   <div class="container">
     <div class="row">
-      <div class="col">
+      <div class="col" data-aos="fade-up" data-aos-duration="700">
         <img src="/images/oneicon.png" width="60px" height="60px" style="margin-right: 10px;">
         <p class="head mb-2 mt-3" style="font-size:20px">Built for developers</p>
         <p class="para" style="font-size: 18px;">Landkit is built to make your life easier. Variables, build tooling,
           documentation, and reusable components.</p>
 
       </div>
-      <div class="col">
+      <div class="col" data-aos="fade-up" data-aos-duration="900">
         <img src="/images/two.png" width="auto" height="60px" style="margin-right: 10px;">
 
         <p class="head mb-2 mt-3" style="font-size:20px">Designed to be modern</p>
         <p class="para" style="font-size: 17px;">Designed with the latest design trends in mind. Landkit feels modern,
           minimal, and beautiful.</p>
       </div>
-      <div class="col">
+      <div class="col" data-aos="fade-up" data-aos-duration="1000">
         <img src="/images/three.png" width="auto" height="60px" style="margin-right: 10px;">
         <p class="head mb-2 mt-3" style="font-size:20px">Documentation for everything </p>
         <p class="para" style="font-size: 18px;">We've written extensive documentation for components and tools, so you
@@ -169,7 +363,7 @@
 
   <div class="container">
     <div class="row">
-      <div class="col ">
+      <div class="col " data-aos="fade-right" data-aos-duration="1500">
         <div class="card ms-2" style="width: 430px; border-color:white; box-shadow:0 4px 8px rgba(0, 0, 0, 0.1);">
           <img src="/images/form.jpg" style="border-radius:5px 5px 0 0">
           <div class="card-body">
@@ -206,7 +400,7 @@
 
 
       </div>
-      <div class="col">
+      <div class="col" data-aos="fade-left" data-aos-duration="1500">
         <h3 class="heading">The most useful resource <br>
           <span class="head">ever created for </span><span class="typed-text" style="color:rgba(66, 186, 150, 1);"
             id="typed-text"></span>
@@ -251,35 +445,31 @@
 
         </p>
 
-      
+
         <div class="listt" style="margin-bottom: 20px;">
-          <i class="bi bi-check-circle-fill" style="color: #42ba96;"></i> 
+          <i class="bi bi-check-circle-fill" style="color: #42ba96;"></i>
           <span style="color: rgb(64, 192, 64);"> Lifetime updates
           </span>
-          <i class="bi bi-check-circle-fill" style="color: #42ba96; margin-left:150px; "></i> 
-          <span style="color: rgb(64, 192, 64);">          Tech support
+          <i class="bi bi-check-circle-fill" style="color: #42ba96; margin-left:150px; "></i>
+          <span style="color: rgb(64, 192, 64);"> Tech support
           </span>
-          
+
         </div>
         <div class="listt">
-          <i class="bi bi-check-circle-fill" style="color: #42ba96;"></i> 
-          <span style="color: rgb(64, 192, 64);">          Tons of assets
+          <i class="bi bi-check-circle-fill" style="color: #42ba96;"></i>
+          <span style="color: rgb(64, 192, 64);"> Tons of assets
           </span>
-          <i class="bi bi-check-circle-fill" style="color: #42ba96;margin-left:170px"></i> 
-          <span style="color: rgb(64, 192, 64);">          Integration ready
+          <i class="bi bi-check-circle-fill" style="color: #42ba96;margin-left:170px"></i>
+          <span style="color: rgb(64, 192, 64);"> Integration ready
           </span>
 
-         
-            
+
+
         </div>
 
 
 
-        <div class="row">
-          <div class="col">
 
-          </div>
-        </div>
 
       </div>
 
@@ -290,14 +480,14 @@
 
   <div class="container">
     <div class="row">
-      <div class="col">
+      <div class="col" data-aos="fade-right" data-aos-duration="1500">
         <p style="font-size: 30px; font-weight:350;">We have lots of experience <br>
           <span style="font-size: 30px; font-weight:350; color:rgba(51,94,234,1);">building Bootstrap themes.
           </span>
         </p>
 
 
-        <p class="para"> We've built well over a dozen Bootstrap themes and sold tens of thousands of copies.</p>
+        <p class="para mt-2"> We've built well over a dozen Bootstrap themes and sold tens of thousands of copies.</p>
 
 
         <div class="text " style="font-size: 20px;"> <img src="/images/boot1.png" width="50px">
@@ -326,7 +516,7 @@
 
 
       </div>
-      <div class="col">
+      <div class="col" data-aos="fade-left" data-aos-duration="1500">
         <div class="container-fluid p-5">
           <div class="slanted-image-wrapper" style="perspective: 1000px;">
             <img src="/images/dashkit.jpg" alt="Dashboard Image" class="slanted-image ">
@@ -417,7 +607,7 @@
 
 
 
-<div class="container-fluid"></div>
+  <div class="container-fluid"></div>
   <div class="container" style="background-color: #f1f4f8;">
     <div class="row">
       <div class="col">
@@ -471,218 +661,234 @@
     </form>
 
 
-  <div class="container py-5 ">
-    <div class="row justify-content-center">
+    <div class="container py-5 ">
+      <div class="row justify-content-center">
         <div class="col-md-5 d-flex flex-column p-0">
-            <div class="card shadow border-0" style="z-index: 1;">
-                <div class="card-body text-center" style="padding: 0 !important;">
-                  <span class="badge rounded-pill mt-5 px-3 py-2" style="background-color:#eaeffd; color:#335eea; font-weight:500">STANDARD</span>
-                  <h2 class="mt-4"><span style="font-size: 19px; vertical-align: top;">$</span>
-                      <span style="font-size: 35px;">29</span><span style="font-size: 18px;">/mo</span></h2>
-                    <p class="text-muted">per seat</p>
-                    <ul class="list-unstyled text-start mx-auto mt-5 " style="max-width: 55%;">
-                        <li class="mb-3"><i class="bi bi-check-circle-fill text-success me-2 "></i> Rich, responsive landing pages</li>
-                        <li class="mb-3"><i class="bi bi-check-circle-fill text-success me-2"></i> 100+ styled components</li>
-                        <li class="mb-3"><i class="bi bi-check-circle-fill text-success me-2"></i> Flexible, simple license</li>
-                        <li class="mb-3"><i class="bi bi-check-circle-fill text-success me-2"></i> Speedy build tooling</li>
-                        <li><i class="bi bi-check-circle-fill text-success me-2"></i> 6 months free support included</li>
-                    </ul>
-                    <button class="btn btn-primary w-100 btn-lg" style="border-radius:0px 0px 5px 5px; margin-top:50px; height:60px">Get it now</button>
-                </div>
+          <div class="card shadow border-0" style="z-index: 1;">
+            <div class="card-body text-center" style="padding: 0 !important;">
+              <span class="badge rounded-pill mt-5 px-3 py-2"
+                style="background-color:#eaeffd; color:#335eea; font-weight:500">STANDARD</span>
+              <h2 class="mt-4"><span style="font-size: 19px; vertical-align: top;">$</span>
+                <span style="font-size: 35px;">29</span><span style="font-size: 18px;">/mo</span>
+              </h2>
+              <p class="text-muted">per seat</p>
+              <ul class="list-unstyled text-start mx-auto mt-5 " style="max-width: 55%;">
+                <li class="mb-3"><i class="bi bi-check-circle-fill text-success me-2 "></i> Rich, responsive landing
+                  pages</li>
+                <li class="mb-3"><i class="bi bi-check-circle-fill text-success me-2"></i> 100+ styled components</li>
+                <li class="mb-3"><i class="bi bi-check-circle-fill text-success me-2"></i> Flexible, simple license</li>
+                <li class="mb-3"><i class="bi bi-check-circle-fill text-success me-2"></i> Speedy build tooling</li>
+                <li><i class="bi bi-check-circle-fill text-success me-2"></i> 6 months free support included</li>
+              </ul>
+              <button class="btn btn-primary w-100 btn-lg"
+                style="border-radius:0px 0px 5px 5px; margin-top:50px; height:60px">Get it now</button>
             </div>
+          </div>
         </div>
         <div class="col-md-5 mt-4 mt-4 md-0 d-flex flex-column p-0 ">
-            <div class="card shadow border-0" >
-                <div class="card-body text-center" style="padding: 0px !important;  ">
-                    <span class="badge rounded-pill mt-5 px-3 py-2" style="background-color:#eaeffd; color:#335eea; font-weight:500">ENTERPRISE</span>
-                    <p class="text-muted" style="font-size: 20px; margin-top:100px">We offer variable pricing with
-                       <br>discounts for larger organizations. Get <br>in touch with us and we’ll figure out<br> 
-                       something that works for everyone.</p>
-                    <button class="btn btn-light w-100 text-muted border btn-lg" style="border-radius:0px 0px 5px 5px;background-color: rgb(223, 231, 234); border-radius:0;margin-top:120px">Contact us</button>
-                </div>
+          <div class="card shadow border-0">
+            <div class="card-body text-center" style="padding: 0px !important;  ">
+              <span class="badge rounded-pill mt-5 px-3 py-2"
+                style="background-color:#eaeffd; color:#335eea; font-weight:500">ENTERPRISE</span>
+              <p class="text-muted" style="font-size: 20px; margin-top:100px">We offer variable pricing with
+                <br>discounts for larger organizations. Get <br>in touch with us and we’ll figure out<br>
+                something that works for everyone.
+              </p>
+              <button class="btn btn-light w-100 text-muted border btn-lg"
+                style="border-radius:0px 0px 5px 5px;background-color: rgb(223, 231, 234); border-radius:0;margin-top:120px">Contact
+                us</button>
             </div>
+          </div>
         </div>
+      </div>
     </div>
-</div>
 
 
 
 
-<div class="container"style="background-color:rgba(27,42,78,1); width:400%px; height:760px;clip-path: ellipse(90% 90% at 50% 0%);">
- <div class="row">
-  <div class="col">
-    <i class="bi bi-question-circle-fill" style="color: #42ba96; font-size:25px; vertical-align:-4px"></i>
-    <span class="title" style="color: white; margin-left:10px;  ">Can I use Landkit for my clients?
-    </span><br>
-    <span class="para" style="font-size: 15px; margin-left:38px">Absolutely. The Bootstrap Themes license allows you to <br>
-      <span style="margin-left:38px">      build a website for personal use or for a client.</span>
-    </span>
-    <br>
-    <br>
-    <br>
-    <i class="bi bi-question-circle-fill" style="color: #42ba96;font-size:25px;vertical-align:-4px"></i>
-    <span class="title" style="color: white; margin-left:10px">Do I get free updates?
+    <div class="container"
+      style="background-color:rgba(27,42,78,1); width:400%px; height:760px;clip-path: ellipse(90% 90% at 50% 0%);">
+      <div class="row">
+        <div class="col">
+          <i class="bi bi-question-circle-fill" style="color: #42ba96; font-size:25px; vertical-align:-4px"></i>
+          <span class="title" style="color: white; margin-left:10px;  ">Can I use Landkit for my clients?
+          </span><br>
+          <span class="para" style="font-size: 15px; margin-left:38px">Absolutely. The Bootstrap Themes license allows
+            you to <br>
+            <span style="margin-left:38px"> build a website for personal use or for a client.</span>
+          </span>
+          <br>
+          <br>
+          <br>
+          <i class="bi bi-question-circle-fill" style="color: #42ba96;font-size:25px;vertical-align:-4px"></i>
+          <span class="title" style="color: white; margin-left:10px">Do I get free updates?
 
-    </span><br>
-    <span class="para" style="font-size: 15px; margin-left:38px">Yes. We update all of our themes with each Bootstrap <br> 
-      <span style=" margin-left:38px">      update, plus are constantly adding new components, 
-      </span>
+          </span><br>
+          <span class="para" style="font-size: 15px; margin-left:38px">Yes. We update all of our themes with each
+            Bootstrap <br>
+            <span style=" margin-left:38px"> update, plus are constantly adding new components,
+            </span>
 
-      <br >
-      <span style="margin-left: 38px;">pages, and features to our themes.</span>
+            <br>
+            <span style="margin-left: 38px;">pages, and features to our themes.</span>
 
-    </span>
-    <br>
+          </span>
+          <br>
+        </div>
+        <div class="col">
+          <i class="bi bi-question-circle-fill" style="color: #42ba96; font-size:25px; vertical-align:-4px"></i>
+          <span class="title" style="color: white; margin-left:10px;  ">Is there a money back guarantee?
+
+          </span><br>
+          <span class="para" style="font-size: 15px; margin-left:38px">Yup! Bootstrap Themes come with a satisfaction
+            <br>
+            <span style="margin-left:38px"> guarantee. Submit a return and get your money back.</span>
+          </span>
+          <br>
+          <br>
+          <br>
+          <i class="bi bi-question-circle-fill" style="color: #42ba96;font-size:25px;vertical-align:-4px"></i>
+          <span class="title" style="color: white; margin-left:10px">Does it work with Rails? React? Laravel?
+
+
+          </span><br>
+          <span class="para" style="font-size: 15px; margin-left:38px">Yes. Landkit has basic CSS/JS files you can
+            include. If <br>
+            <span style=" margin-left:38px"> you want to enable deeper customization, you can
+            </span>
+
+            <br>
+            <span style="margin-left: 38px;">integrate it into your assets pipeline or build processes.</span>
+
+          </span>
+          <br>
+        </div>
+
+
+      </div>
+      <div class="container text-center mt-5">
+        <span class="badge rounded-pill uppercase"
+          style="background-color:rgb(50, 63, 91); color:#7985ab; font-weight:500">GET STARTED</span>
+        <br> <span style="color: white; font-size:35px">Get Landkit and save your time.
+        </span>
+        <br>
+        <br>
+        <span style="color: #7985ab; margin-top:20px; font-size:17px">
+          Stop wasting time trying to do it the "right way" and build a site from scratch.
+        </span>
+        <br>
+        <span style="color:#7985ab; font-size:17px">Landkit is faster, easier, and you still have complete
+          control.</span>
+
+      </div>
+
+      <button type="button" class="btn btn"
+        style="background-color: #42ba96; color:white; margin-top:70px; margin-left:480px;height:60px; width:150px">
+        <span style="font-size: 18px;"> Buy it now</span> <i class="fa fa-arrow-right"></i>
+      </button>
+
+
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <img src="/images/logo.svg"><br>
+          <div class="para" style="font-size: 15px; margin-top:10px">A better way to build.</div>
+          <span>
+            <i class="bi bi-instagram" style="color: #869ab8; margin-right:10px"></i>
+            <i class="bi bi-facebook" style="color: #869ab8; margin-right:10px"></i>
+            <i class="bi bi-twitter" style="color: #869ab8; margin-right:10px"></i>
+            <i class="bi bi-pinterest" style="color: #869ab8; margin-right:10px"></i>
+          </span>
+        </div>
+        <div class="col">
+          <span style="font-size: 12px; color:#556884">PRODUCTS</span>
+          <ul class="list-unstyled ">
+            <li class="mb-2">
+
+              <a href="# " class="text-reset text-decoration-none" style="color: #a1b2cb !important;">Page Builder</a>
+            </li>
+            <li class="mb-2">
+              <a href="#!" class="text-reset text-decoration-none" style="color: #869ab8  !important;">UI Kit</a>
+            </li>
+            <li class="mb-2">
+              <a href="#!" class="text-reset text-decoration-none" style="color: #869ab8  !important;">Styleguide</a>
+            </li>
+            <li class="mb-2">
+              <a href="#!" class="text-reset text-decoration-none" style="color: #869ab8  !important;">Documentation</a>
+            </li>
+            <li class="mb-2">
+              <a href="#!" class="text-reset text-decoration-none" style="color: #869ab8  !important;">Changelog</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col">
+          <span style="font-size: 12px; color:#556884">SERVICES</span>
+          <ul class="list-unstyled text-body-secondary">
+            <li class="mb-2">
+              <a href="#!" class="text-reset text-decoration-none" style="color: #869ab8  !important;">Documentation</a>
+            </li>
+            <li class="mb-2">
+              <a href="#!" class="text-reset text-decoration-none" style="color: #869ab8  !important;">Changelog</a>
+            </li>
+            <li class="mb-2">
+              <a href="#!" class="text-reset text-decoration-none" style="color: #869ab8  !important;">Pagebuilder</a>
+            </li>
+            <li class="mb-2">
+              <a href="#!" class="text-reset text-decoration-none" style="color: #869ab8  !important;">UI Kit</a>
+            </li>
+
+          </ul>
+        </div>
+        <div class="col">
+          <span style="font-size: 12px; color:#556884;  ">CONNECT</span>
+          <ul class="list-unstyled text-body-secondary">
+            <li class="mb-2">
+              <a href="#!" class="text-reset text-decoration-none" style="color: #869ab8  !important;">Page Builder</a>
+            </li>
+            <li class="mb-2">
+              <a href="#!" class="text-reset text-decoration-none" style="color: #869ab8  !important;">UI Kit</a>
+            </li>
+            <li class="mb-2">
+              <a href="#!" class="text-reset text-decoration-none" style="color: #869ab8  !important;">Styleguide</a>
+            </li>
+            <li class="mb-2">
+              <a href="#!" class="text-reset text-decoration-none" style="color: #869ab8  !important;">Documentation</a>
+            </li>
+            <li class="mb-2">
+              <a href="#!" class="text-reset text-decoration-none" style="color: #869ab8  !important;">Changelog</a>
+            </li>
+            <li class="mb-2">
+              <a href="#!" class="text-reset text-decoration-none" style="color: #869ab8  !important;">Documentation</a>
+            </li>
+            <li class="mb-2">
+              <a href="#!" class="text-reset text-decoration-none" style="color: #869ab8  !important;">Changelog</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col">
+          <span style="font-size: 12px; color:#556884">LEGAL</span>
+          <ul class="list-unstyled text-body-secondary">
+
+
+            <li class="mb-2">
+              <a href="#!" class="text-reset text-decoration-none" style="color: #869ab8  !important;">Documentation</a>
+            </li>
+            <li class="mb-2">
+              <a href="#!" class="text-reset text-decoration-none" style="color: #869ab8  !important;">Changelog</a>
+            </li>
+            <li class="mb-2">
+              <a href="#!" class="text-reset text-decoration-none" style="color: #869ab8  !important;">Pagebuilder</a>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
   </div>
-  <div class="col">
-    <i class="bi bi-question-circle-fill" style="color: #42ba96; font-size:25px; vertical-align:-4px"></i>
-    <span class="title" style="color: white; margin-left:10px;  ">Is there a money back guarantee?
-
-    </span><br>
-    <span class="para" style="font-size: 15px; margin-left:38px">Yup! Bootstrap Themes come with a satisfaction <br>
-      <span style="margin-left:38px">      guarantee. Submit a return and get your money back.</span>
-    </span>
-    <br>
-    <br>
-    <br>
-    <i class="bi bi-question-circle-fill" style="color: #42ba96;font-size:25px;vertical-align:-4px"></i>
-    <span class="title" style="color: white; margin-left:10px">Does it work with Rails? React? Laravel?
-
-
-    </span><br>
-    <span class="para" style="font-size: 15px; margin-left:38px">Yes. Landkit has basic CSS/JS files you can include. If <br> 
-      <span style=" margin-left:38px">      you want to enable deeper customization, you can
-      </span>
-
-      <br >
-      <span style="margin-left: 38px;">integrate it into your assets pipeline or build processes.</span>
-
-    </span>
-    <br>
-  </div>
-  
-
- </div>
- <div class="container text-center mt-5">
-  <span class="badge rounded-pill uppercase" style="background-color:rgb(50, 63, 91); color:#7985ab; font-weight:500">GET STARTED</span>
- <br> <span style="color: white; font-size:35px">Get Landkit and save your time.
-  </span>
-  <br>
-  <br>
-  <span style="color: #7985ab; margin-top:20px; font-size:17px">
-    Stop wasting time trying to do it the "right way" and build a site from scratch.
-  </span>
-  <br>
-  <span style="color:#7985ab; font-size:17px">Landkit is faster, easier, and you still have complete control.</span>
-
-</div>
-
-<button type="button" class="btn btn" style="background-color: #42ba96; color:white; margin-top:70px; margin-left:480px;height:60px; width:150px">
- <span style="font-size: 18px;"> Buy it now</span> <i class="fa fa-arrow-right"></i>
-</button>
-
-
-</div>
-
-<div class="container">
-  <div class="row">
-    <div class="col">
-      <img src="/images/logo.svg"><br>
-      <div class="para" style="font-size: 15px; margin-top:10px">A better way to build.</div>
-      <span>
-        <i class="bi bi-instagram" style="color: #869ab8; margin-right:10px"></i>
-        <i class="bi bi-facebook" style="color: #869ab8; margin-right:10px"></i>
-        <i class="bi bi-twitter" style="color: #869ab8; margin-right:10px"></i>
-        <i class="bi bi-pinterest" style="color: #869ab8; margin-right:10px"></i>
-      </span>
-    </div>
-    <div class="col">
-      <span  style="font-size: 12px; color:#556884">PRODUCTS</span> 
-      <ul class="list-unstyled ">
-        <li class="mb-2">
-
-          <a href="# " class="text-reset text-decoration-none" style="color: #a1b2cb !important;">Page Builder</a>
-        </li>
-        <li class="mb-2">
-          <a href="#!" class="text-reset text-decoration-none" style="color: #869ab8  !important;">UI Kit</a>
-        </li>
-        <li class="mb-2">
-          <a href="#!" class="text-reset text-decoration-none" style="color: #869ab8  !important;">Styleguide</a>
-        </li>
-        <li class="mb-2">
-          <a href="#!" class ="text-reset text-decoration-none"style="color: #869ab8  !important;">Documentation</a>
-        </li>
-        <li class="mb-2">
-          <a href="#!" class="text-reset text-decoration-none" style="color: #869ab8  !important;">Changelog</a>
-        </li>
-      </ul>
-    </div>
-    <div class="col">
-      <span style="font-size: 12px; color:#556884">SERVICES</span>
-      <ul class="list-unstyled text-body-secondary">
-        <li class="mb-2">
-          <a href="#!" class="text-reset text-decoration-none" style="color: #869ab8  !important;">Documentation</a>
-        </li>
-        <li class="mb-2">
-          <a href="#!" class="text-reset text-decoration-none" style="color: #869ab8  !important;">Changelog</a>
-        </li>
-        <li class="mb-2">
-          <a href="#!" class="text-reset text-decoration-none" style="color: #869ab8  !important;">Pagebuilder</a>
-        </li>
-        <li class="mb-2">
-          <a href="#!" class="text-reset text-decoration-none" style="color: #869ab8  !important;">UI Kit</a>
-        </li>
-       
-      </ul>
-    </div>
-    <div class="col">
-      <span style="font-size: 12px; color:#556884;  ">CONNECT</span>
-      <ul class="list-unstyled text-body-secondary">
-        <li class="mb-2">
-          <a href="#!" class="text-reset text-decoration-none" style="color: #869ab8  !important;">Page Builder</a>
-        </li>
-        <li class="mb-2">
-          <a href="#!" class="text-reset text-decoration-none" style="color: #869ab8  !important;">UI Kit</a>
-        </li>
-        <li class="mb-2">
-          <a href="#!" class="text-reset text-decoration-none" style="color: #869ab8  !important;">Styleguide</a>
-        </li>
-        <li class="mb-2">
-          <a href="#!" class="text-reset text-decoration-none" style="color: #869ab8  !important;">Documentation</a>
-        </li>
-        <li class="mb-2">
-          <a href="#!" class="text-reset text-decoration-none" style="color: #869ab8  !important;">Changelog</a>
-        </li>
-        <li class="mb-2">
-          <a href="#!" class="text-reset text-decoration-none"style="color: #869ab8  !important;">Documentation</a>
-        </li>
-        <li class="mb-2">
-          <a href="#!" class="text-reset text-decoration-none" style="color: #869ab8  !important;">Changelog</a>
-        </li>
-      </ul>
-    </div>
-    <div class="col">
-      <span style="font-size: 12px; color:#556884">LEGAL</span>
-      <ul class="list-unstyled text-body-secondary">
-      
-       
-        <li class="mb-2">
-          <a href="#!" class="text-reset text-decoration-none" style="color: #869ab8  !important;">Documentation</a>
-        </li>
-        <li class="mb-2">
-          <a href="#!" class="text-reset text-decoration-none" style="color: #869ab8  !important;">Changelog</a>
-        </li>
-        <li class="mb-2">
-          <a href="#!" class="text-reset text-decoration-none" style="color: #869ab8  !important;">Pagebuilder</a>
-        </li>
-        
-      </ul>
-    </div>
-  </div>
-</div>
-
-
-  </div>
 
 
 
@@ -725,21 +931,24 @@
 
 
 
-
+  <script src="https://cdn.jsdelivr.net/npm/fe@2.0.27/index.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
-    <script>
-      document.addEventListener("DOMContentLoaded", function() {
-          const billingSwitch = document.getElementById("billingSwitch");
-          const priceElement = document.querySelector(".card-body h2 span:nth-child(2)"); 
-      
-          billingSwitch.addEventListener("change", function() {
-              priceElement.textContent = this.checked ? "49" : "29"; 
-          });
-      });
-      </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const billingSwitch = document.getElementById("billingSwitch");
+      const priceElement = document.querySelector(".card-body h2 span:nth-child(2)");
 
+      billingSwitch.addEventListener("change", function () {
+        priceElement.textContent = this.checked ? "49" : "29";
+      });
+    });
+  </script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>
